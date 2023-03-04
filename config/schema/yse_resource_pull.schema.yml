@@ -1,0 +1,22 @@
+yse_resource_pull.settings:
+  type: config_object
+  label: 'YSE Resource Pull Settings'
+  mapping:
+    resource_host:
+      type: text
+      label: 'YSE Resource Host'
+    resource_apikey:
+      type: text
+      label: 'YSE Resource API Key'
+    resource_paths:
+      type: sequence
+      label: 'Per-Resource Paths'
+      sequence:
+        type: string
+        label: 'Path for Resource'
+    resource_mimes:
+      type: sequence
+      label: 'Per-Resource MIME Types'
+      sequence:
+        type: string
+        label: 'MIME Type for Resource'

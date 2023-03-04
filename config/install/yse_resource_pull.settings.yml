@@ -1,0 +1,8 @@
+resource_host: ''
+resource_apikey: ''
+resource_types:
+  courses_faculty: '/courses/faculty_hub_embed/'
+  courses_specialization: '/courses/spec_hub_embed/'
+resource_mimes:
+  courses_faculty: 'text/html'
+  courses_specialization: 'text/html'
