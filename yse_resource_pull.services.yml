@@ -1,0 +1,9 @@
+services:
+  yse_resource_pull.twig.extension.functions:
+    class: Drupal\yse_resource_pull\Twig\Extension\Functions
+    tags:
+      - { name: twig.extension }
+  yse_resource_pull.twig.extension.filters:
+    class: Drupal\yse_resource_pull\Twig\Extension\Filters
+    tags:
+      - { name: twig.extension }
