@@ -63,7 +63,7 @@ class YseResourcePullForm extends ConfigFormBase {
       '#default_value' => $resource_host,
       '#min' => 1,
       '#required' => TRUE,
-      '#description' => $this->t('The Resources URL for YSE data lookups.'),
+      '#description' => $this->t('The resources server hostname.  Not the full URL, no protocol or paths.  ex: allrecords.university.edu'),
     ];
 
     $form['resource_apikey'] = [
@@ -71,8 +71,8 @@ class YseResourcePullForm extends ConfigFormBase {
       '#title' => $this->t('API Key'),
       '#default_value' => $resource_apikey,
       '#min' => 1,
-      '#required' => TRUE,
-      '#description' => $this->t('String that Resources needs for access.'),
+      '#required' => FALSE,
+      '#description' => $this->t('String that grants access.'),
     ];
 
     return parent::buildForm($form, $form_state);

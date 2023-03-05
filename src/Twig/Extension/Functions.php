@@ -43,21 +43,20 @@ class Functions extends AbstractExtension {
    *   NUll or render array of block.
    */
   public function getYseResource(string $type, string $key) {
-
     if ($type && $key) {
-      
-      $config = \Drupal::config('yse_resource_pull');
+
+      $config = \Drupal::config('yse_resource_pull.settings');
       $resource_host   = $config->get('resource_host');
       $resource_path   = $config->get('resource_paths.' . $type);
       $resource_mime   = $config->get('resource_mimes.' . $type);
       $resource_apikey = $config->get('resource_apikey');
-
+      
       if ((!empty($resource_host)) && (!empty($resource_path))){
 
         $yse_resources_url = 'https://' . $resource_host . $resource_path . $key;
 
         if (!empty($resource_apikey)){
-          $yse_resources_url .= '?' . $resource_apikey;
+          $yse_resources_url .= '?apikey=' . $resource_apikey;
         }
 
         $guzzle = new Client(

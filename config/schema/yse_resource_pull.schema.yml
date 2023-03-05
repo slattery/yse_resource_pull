@@ -12,11 +12,9 @@ yse_resource_pull.settings:
       type: sequence
       label: 'Per-Resource Paths'
       sequence:
-        type: string
-        label: 'Path for Resource'
+        - type: string
     resource_mimes:
       type: sequence
       label: 'Per-Resource MIME Types'
       sequence:
-        type: string
-        label: 'MIME Type for Resource'
+        - type: string

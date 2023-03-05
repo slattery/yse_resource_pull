@@ -1,0 +1,7 @@
+yse_resource_pull.form:
+  path: '/admin/config/development/yse-resource-pull'
+  defaults:
+    _form: '\Drupal\yse_resource_pull\Form\YseResourcePullForm'
+    _title: 'YSE Resource Host and Path settings'
+  requirements:
+    _permission: 'administer site configuration'
