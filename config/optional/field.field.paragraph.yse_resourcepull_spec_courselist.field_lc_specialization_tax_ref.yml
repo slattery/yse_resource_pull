@@ -1,0 +1,29 @@
+uuid: 9b7c20a7-97f6-43b0-a575-56d62e06a78e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lc_specialization_tax_ref
+    - paragraphs.paragraphs_type.yse_resourcepull_spec_courselist
+    - taxonomy.vocabulary.specializations
+id: paragraph.yse_resourcepull_spec_courselist.field_lc_specialization_tax_ref
+field_name: field_lc_specialization_tax_ref
+entity_type: paragraph
+bundle: yse_resourcepull_spec_courselist
+label: Specialization
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      specializations: specializations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

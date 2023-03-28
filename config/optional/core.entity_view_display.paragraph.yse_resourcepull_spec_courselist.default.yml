@@ -1,0 +1,22 @@
+uuid: 4d675874-d9a4-4019-8f4d-990b42299385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.yse_resourcepull_spec_courselist.field_lc_specialization_tax_ref
+    - paragraphs.paragraphs_type.yse_resourcepull_spec_courselist
+id: paragraph.yse_resourcepull_spec_courselist.default
+targetEntityType: paragraph
+bundle: yse_resourcepull_spec_courselist
+mode: default
+content:
+  field_lc_specialization_tax_ref:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

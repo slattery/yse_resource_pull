@@ -1,0 +1,10 @@
+uuid: 58390391-230e-493b-a717-d100f30fdc76
+langcode: en
+status: true
+dependencies: {  }
+id: yse_resourcepull_spec_courselist
+label: 'Resource Pull Courses by Specification'
+icon_uuid: null
+icon_default: null
+description: 'Relies on the yse_resource_pull drupal module to fetch data from a source of truth, usually text/html.'
+behavior_plugins: {  }

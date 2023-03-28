@@ -1,0 +1,20 @@
+{% set specterm = paragraph.field_lc_specialization_tax_ref.entity ? paragraph.field_lc_specialization_tax_ref.entity : false %}
+{% set specpath  = specterm.tid ? path('entity.taxonomy_term.canonical', {'taxonomy_term': specterm.tid.value}) : false %}
+
+{% if 'tag' in specpath %}
+{% set speckey = specpath|split('/')|last %}
+  {% if speckey and speckey|length > 0 %}
+<section data-jump-nav-heading="Program Courses" class="global-spacing global-spacing--xlarge global-padding global-padding--xlarge flexible-wysiwyg" id="program-courses">
+  <div class="grid-container">
+	  <div class="grid-x grid-margin-x">
+      <div class="cell medium-10 medium-offset-1 large-8 large-offset-2">
+        <div class="wysiwyg wysiwyg--full wysiwyg-column--center">
+        {{get_yse_resource('courses_specialization', speckey)}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  {% endif %}
+{% endif %}
+
