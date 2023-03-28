@@ -1,0 +1,6 @@
+{
+  "name": "slattery/yse_resource_pull",
+  "description": "Grab content from resource server",
+  "type": "drupal-custom-module",
+  "license": "GPL-2.0-or-later"
+}
