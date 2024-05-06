@@ -2,5 +2,5 @@ name: 'YSE Resource Pull'
 type: module
 description: 'This module pulls info from another place that is not exactly Restful.'
 configure: yse_resource_pull.form
-core_version_requirement: ^9
+core_version_requirement: ^9 || ^10
 package: 'YSE Extras'
